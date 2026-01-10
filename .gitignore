@@ -1,0 +1,17 @@
+*.png
+*:Zone.Identifier*
+FaceSim3D/.github
+FaceSim3D/.idea
+FaceSim3D/.pre-commit-config.yaml
+FaceSim3D/.editorconfig
+.idea/
+.ipynb_checkpoints/
+*.egg-info/
+__pycache__/
+
+# Data and Results (Large files hosted on Zenodo)
+FaceSim3D/data/*
+!FaceSim3D/data/.gitkeep
+FaceSim3D/results/*
+!FaceSim3D/results/.gitkeep
+
