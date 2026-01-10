@@ -13,7 +13,7 @@ Most of the codebase is designed to run in a single **default environment**, whi
 **Purpose**  
 The primary environment for this project.  
 All core scripts and analyses are implemented and tested using `face_sim_env`.
-This environment is based on the [FaceSim3D](https://github.com/SHEscher/FaceSim3D) package. Additionally, the [zennit package](https://github.com/chr5tphr/zennit) is required to implement the LRP method.
+This environment is based on the [FaceSim3D](https://github.com/SHEscher/FaceSim3D) package. Additionally, the [zennit package](https://github.com/chr5tphr/zennit) is required to implement the LRP method and the [openai package](https://github.com/openai/openai-python) is required to implement the VLM method.
 
 Create a virtual environment to install the package:
 ```shell
@@ -40,7 +40,7 @@ pip install zennit openai
 This environment is required only for scripts that perform large-scale clustering, dimensionality reduction, or GPU-accelerated analysis. 
 
 **When to use**  
-Use `latent_analysis_env` **only** for scripts or jupyter notebooks within the LRP_PCA_Autoencoder_analysis folder.
+Use `latent_analysis_env` **only** for scripts or jupyter notebooks within the [LRP_PCA_Autoencoder_analysis](../FaceSim3D/code/LRP_PCA_Autoencoder_analysis) folder.
 
 Create a virtual environment using the `latent_analysis_env.yml` file:
 ```shell
@@ -55,6 +55,7 @@ conda activate latent_analysis_env
 Install the FaceSim3D Package (without its dependencies):
 ```shell
 # Go to root folder of FaceSim3D
+cd FaceSim3D/
 pip install --no-deps -e .
 ```
 
@@ -65,7 +66,7 @@ pip install --no-deps -e .
 This environment is required only for scripts that use the Mediapipe facial landmark tools to define regions of interest in face images.
 
 **When to use**  
-Use `mediapipe_env` **only** for scripts or jupyter notebooks within the LRP_Region_analysis folder.
+Use `mediapipe_env` **only** for scripts or jupyter notebooks within the [LRP_Region_analysis](../FaceSim3D/code/LRP_regional_analysis) folder.
 
 Create a virtual environment using the `mediapipe_env.yml` file:
 ```shell
@@ -80,5 +81,6 @@ conda activate mediapipe_env
 Install the FaceSim3D Package (without its dependencies):
 ```shell
 # Go to root folder of FaceSim3D
+cd FaceSim3D/
 pip install --no-deps -e .
 ```
