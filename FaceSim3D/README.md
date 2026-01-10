@@ -1,0 +1,1 @@
+This folder's structure was built upon the original **[FaceSim3D](https://github.com/SHEscher/FaceSim3D)** project by Hofmann et al. (2024).
