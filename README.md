@@ -14,7 +14,7 @@
 
 This project, **Explainable AI methods for human-aligned face perception**, is a Master's thesis built as an extension of the **[FaceSim3D](https://github.com/SHEscher/FaceSim3D)** project by Hofmann et al. (2024).
 
-While the original work focused on testing the effect of space and time on face similarity judgments and training human-aligned encoding models, this thesis applies **Explainable AI (XAI)** methods - specifically **Layer-wise Relevance Propagation (LRP)** - to investigate *why* these models make specific similarity decisions. We analyze the models' reliance on facial regions, the structure of their internal representations, and compare their reasoning with Large Language Models (LLMs).
+While the original work focused on testing the effect of space and time on face similarity judgments and training human-aligned encoding models, this thesis applies **Explainable AI (XAI)** methods - specifically **Layer-wise Relevance Propagation (LRP)** - to investigate *why* these models make specific similarity decisions. We analyze the models' reliance on facial regions, the structure of their internal representations, and compare their reasoning with Vision Language Models (VLMs).
 
 ---
 
@@ -46,10 +46,10 @@ We investigate the latent structure of the relevance maps to see if systematic c
 *   **Autoencoder**: A convolutional autoencoder compresses heatmaps into a lower-dimensional latent space. We analyze this space using techniques like UMAP and t-SNE to visualize how the model organizes faces based on relevance patterns.
 
 ### 3. Cross-Model Comparison
-To further evaluate the interpretability and validity of the VGG models' reasoning, we compare their results against a state-of-the-art **Large Language Model (Qwen2-VL-72B-Instruct)** (Wang et al., 2024).
-*   **Accuracy**: Assessing if the LLM can perform the same triplet odd-one-out task.
-*   **Agreement**: Comparing the LLM's selected "important regions" (extracted via prompting) with the LRP-derived important regions of the VGG models.
-*   **Decoding Heatmaps**: Using the LLM to decode the heatmaps and compare the results with the LRP-derived important regions.
+To further evaluate the interpretability and validity of the VGG models' reasoning, we compare their results against a state-of-the-art **Vision Language Model (VLM) (Qwen2-VL-72B-Instruct)** (Wang et al., 2024).
+*   **Accuracy**: Assessing if the VLM can perform the same triplet odd-one-out task.
+*   **Agreement**: Comparing the VLM's selected "important regions" (extracted via prompting) with the LRP-derived important regions of the VGG models.
+*   **Decoding Heatmaps**: Using the VLM to decode the heatmaps and compare the results with the LRP-derived important regions.
 
 ---
 
