@@ -4,7 +4,7 @@
 
 *Investigating the underlying decision-making processes of a human-aligned face similarity model using Explainable AI (XAI).*
 
-![Last update](https://img.shields.io/badge/last_update-Dec_29,_2025-green)
+![Last update](https://img.shields.io/badge/last_update-Jan_10,_2026-green)
 ![version](https://img.shields.io/badge/version-v.1-blue)
 [![Original Project](https://img.shields.io/badge/Based_on-FaceSim3D-violet)](https://github.com/SHEscher/FaceSim3D)
 
